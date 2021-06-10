@@ -55,12 +55,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const piclinks = [
-  { id: "1", image: "../OpelAstra/opel-astra.jpg" },
-  { id: "2", image: "../ToyotaYaris/toyota-yaris.jpg" },
-  { id: "3", image: "../SkodaOctavia/skoda-octavia.jpg" },
-  { id: "4", image: "../FordFocus/ford-focus.jpg" },
-  { id: "5", image: "../Maybah/Maybah.jpg" },
-  { id: "6", image: "../MercedesS550/Mercedes-s550.jpg" },
+  { id: "1", image: "./OpelAstra/opel-astra.jpg" },
+  { id: "2", image: "./ToyotaYaris/toyota-yaris.jpg" },
+  { id: "3", image: "./SkodaOctavia/skoda-octavia.jpg" },
+  { id: "4", image: "./FordFocus/ford-focus.jpg" },
+  { id: "5", image: "./Maybah/Maybah.jpg" },
+  { id: "6", image: "./MercedesS550/Mercedes-s550.jpg" },
 ];
 
 /**

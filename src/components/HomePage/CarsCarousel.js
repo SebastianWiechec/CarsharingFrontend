@@ -8,37 +8,37 @@ export default function CarsCarousel(props) {
     {
       name: "Opel Astra",
       description: "Opel Astra 2016",
-      img: "../OpelAstra/opel-astra.jpg",
+      img: "./OpelAstra/opel-astra.jpg",
       url: "/Car/1",
     },
     {
       name: "Toyota Yaris",
       description: "Toyota Yaris 2018",
-      img: "../ToyotaYaris/toyota-yaris.jpg",
+      img: "./ToyotaYaris/toyota-yaris.jpg",
       url: "/Car/2",
     },
     {
       name: "Skoda Octavia",
       description: "Skoda Octavia 2018",
-      img: "../SkodaOctavia/skoda-octavia.jpg",
+      img: "./SkodaOctavia/skoda-octavia.jpg",
       url: "/Car/3",
     },
     {
       name: "Ford Focus",
       description: "Ford Focus 2017",
-      img: "../FordFocus/ford-focus.jpg",
+      img: "./FordFocus/ford-focus.jpg",
       url: "/Car/4",
     },
     {
       name: "Maybah",
       description: "Maybah 2020",
-      img: "../Maybah/Maybah.jpg",
+      img: "./Maybah/Maybah.jpg",
       url: "/Car/5",
     },
     {
       name: "Mercedes S550",
       description: "Mercedes S550 2020",
-      img: "../MercedesS550/Mercedes-s550.jpg",
+      img: "./MercedesS550/Mercedes-s550.jpg",
       url: "/Car/6",
     },
   ];
