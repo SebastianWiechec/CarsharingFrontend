@@ -4,7 +4,7 @@ import { store } from "./actions/store";
 import { Provider } from "react-redux";
 import Users from "./components/Users";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
   Redirect,
@@ -31,7 +31,7 @@ const hist = createBrowserHistory();
 function App() {
   return (
     <Provider store={store}>
-      <Router history={hist}>
+      <Router history={hist} basename="/">
         <Switch>
           <Route exact path="/" component={DefaultContainer} />
           <Route exact path="/SignIn" component={LoginContainer} />
