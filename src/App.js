@@ -33,21 +33,21 @@ function App() {
     <Provider store={store}>
       <Router history={hist} basename="/">
         <Switch>
-          <Route exact path="/" component={DefaultContainer} />
-          <Route exact path="/SignIn" component={LoginContainer} />
-          <Route exact path="/Register" component={LoginContainer} />
-          <Route exact path="/Cars" component={DefaultContainer} />
-          <Route exact path="/Prices" component={DefaultContainer} />
-          <Route exact path="/404" component={LoginContainer} />
-          <Route exact path="/Users" component={DefaultContainer} />
-          <Route exact path="/Contact" component={DefaultContainer} />
-          <Route exact path="/Car/:id" component={DefaultContainer} />
-          <Route exact path="/PaymentForm" component={DefaultContainer} />
-          <Route exact path="/Review" component={DefaultContainer} />
-          <Route exact path="/ChechoutForm" component={DefaultContainer} />
-          <Route exact path="/Checkout/:id" component={DefaultContainer} />
-          <Route exact path="/Costs" component={DefaultContainer} />
-          <Redirect to="/404" />
+          <Route exact path="/CarsharingFrontend/" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/SignIn" component={LoginContainer} />
+          <Route exact path="/CarsharingFrontend/Register" component={LoginContainer} />
+          <Route exact path="/CarsharingFrontend/Cars" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/Prices" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/404" component={LoginContainer} />
+          <Route exact path="/CarsharingFrontend/Users" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/Contact" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/Car/:id" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/PaymentForm" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/Review" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/ChechoutForm" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/Checkout/:id" component={DefaultContainer} />
+          <Route exact path="/CarsharingFrontend/Costs" component={DefaultContainer} />
+          <Redirect to="/CarsharingFrontend/404" />
         </Switch>
       </Router>
     </Provider>
@@ -56,26 +56,26 @@ function App() {
 
 const LoginContainer = () => (
   <div className="container">
-    <Route exact path="/SignIn" component={SignInSide} />
-    <Route exact path="/Register" component={SignUp} />
-    <Route exact path="/404" component={NotFoundPage} />
+    <Route exact path="/CarsharingFrontend/SignIn" component={SignInSide} />
+    <Route exact path="/CarsharingFrontend/Register" component={SignUp} />
+    <Route exact path="/CarsharingFrontend/404" component={NotFoundPage} />
   </div>
 );
 
 const DefaultContainer = () => (
   <div className="container">
     <PrimarySearchAppBar />
-    <Route exact path="/" component={Home} />
-    <Route exact path="/Cars" component={CarGridList} />
-    <Route exact path="/Prices" component={Pricing} />
-    <Route exact path="/Users" component={Users} />
-    <Route exact path="/Contact" component={AddressForm} />
-    <Route exact path="/Costs" component={Costs} />
-    <Route path="/Car/:id" component={RecipeReviewCard} />
-    <Route path="/PaymentForm" component={CheckoutPaymentForm} />
-    <Route path="/Review" component={CheckoutReview} />
-    <Route path="/ChechoutForm" component={CheckoutAddressForm} />
-    <Route path="/Checkout/:id" component={Checkout} />
+    <Route exact path="/CarsharingFrontend/" component={Home} />
+    <Route exact path="/CarsharingFrontend/Cars" component={CarGridList} />
+    <Route exact path="/CarsharingFrontend/Prices" component={Pricing} />
+    <Route exact path="/CarsharingFrontend/Users" component={Users} />
+    <Route exact path="/CarsharingFrontend/Contact" component={AddressForm} />
+    <Route exact path="/CarsharingFrontend/Costs" component={Costs} />
+    <Route path="/CarsharingFrontend/Car/:id" component={RecipeReviewCard} />
+    <Route path="/CarsharingFrontend/PaymentForm" component={CheckoutPaymentForm} />
+    <Route path="/CarsharingFrontend/Review" component={CheckoutReview} />
+    <Route path="/CarsharingFrontend/ChechoutForm" component={CheckoutAddressForm} />
+    <Route path="/CarsharingFrontend/Checkout/:id" component={Checkout} />
     <StickyFooter />
   </div>
 );
