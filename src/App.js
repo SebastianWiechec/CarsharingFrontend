@@ -33,7 +33,7 @@ function App() {
     <Provider store={store}>
       <Router history={hist} basename="/">
         <Switch>
-          <Route exact path="/CarsharingFrontend/" component={DefaultContainer} />
+          <Route exact path="/" component={DefaultContainer} />
           <Route exact path="/CarsharingFrontend/SignIn" component={LoginContainer} />
           <Route exact path="/CarsharingFrontend/Register" component={LoginContainer} />
           <Route exact path="/CarsharingFrontend/Cars" component={DefaultContainer} />
@@ -65,7 +65,7 @@ const LoginContainer = () => (
 const DefaultContainer = () => (
   <div className="container">
     <PrimarySearchAppBar />
-    <Route exact path="/CarsharingFrontend/" component={Home} />
+    <Route exact path="/" component={Home} />
     <Route exact path="/CarsharingFrontend/Cars" component={CarGridList} />
     <Route exact path="/CarsharingFrontend/Prices" component={Pricing} />
     <Route exact path="/CarsharingFrontend/Users" component={Users} />
