@@ -31,23 +31,23 @@ const hist = createBrowserHistory();
 function App() {
   return (
     <Provider store={store}>
-      <Router history={hist} basename="/">
+      <Router history={hist}>
         <Switch>
-          <Route exact path="/CarsharingFrontend/" component={DefaultContainer} />
-          <Route exact path="SignIn" component={LoginContainer} />
-          <Route exact path="Register" component={LoginContainer} />
-          <Route exact path="Cars" component={DefaultContainer} />
-          <Route exact path="Prices" component={DefaultContainer} />
-          <Route exact path="404" component={LoginContainer} />
-          <Route exact path="Users" component={DefaultContainer} />
-          <Route exact path="Contact" component={DefaultContainer} />
-          <Route exact path="Car/:id" component={DefaultContainer} />
-          <Route exact path="PaymentForm" component={DefaultContainer} />
-          <Route exact path="Review" component={DefaultContainer} />
-          <Route exact path="ChechoutForm" component={DefaultContainer} />
-          <Route exact path="Checkout/:id" component={DefaultContainer} />
-          <Route exact path="Costs" component={DefaultContainer} />
-          <Redirect to="/CarsharingFrontend/" />
+          <Route exact path="/" component={DefaultContainer} />
+          <Route exact path="/SignIn" component={LoginContainer} />
+          <Route exact path="/Register" component={LoginContainer} />
+          <Route exact path="/Cars" component={DefaultContainer} />
+          <Route exact path="/Prices" component={DefaultContainer} />
+          <Route exact path="/404" component={LoginContainer} />
+          <Route exact path="/Users" component={DefaultContainer} />
+          <Route exact path="/Contact" component={DefaultContainer} />
+          <Route exact path="/Car/:id" component={DefaultContainer} />
+          <Route exact path="/PaymentForm" component={DefaultContainer} />
+          <Route exact path="/Review" component={DefaultContainer} />
+          <Route exact path="/ChechoutForm" component={DefaultContainer} />
+          <Route exact path="/Checkout/:id" component={DefaultContainer} />
+          <Route exact path="/Costs" component={DefaultContainer} />
+          <Redirect to="/404" />
         </Switch>
       </Router>
     </Provider>
@@ -56,26 +56,26 @@ function App() {
 
 const LoginContainer = () => (
   <div className="container">
-    <Route exact path="SignIn" component={SignInSide} />
-    <Route exact path="Register" component={SignUp} />
-    <Route exact path="404" component={NotFoundPage} />
+    <Route exact path="/SignIn" component={SignInSide} />
+    <Route exact path="/Register" component={SignUp} />
+    <Route exact path="/404" component={NotFoundPage} />
   </div>
 );
 
 const DefaultContainer = () => (
   <div className="container">
     <PrimarySearchAppBar />
-    <Route exact path="/CarsharingFrontend/" component={Home} />
-    <Route exact path="Cars" component={CarGridList} />
-    <Route exact path="Prices" component={Pricing} />
-    <Route exact path="Users" component={Users} />
-    <Route exact path="Contact" component={AddressForm} />
-    <Route exact path="Costs" component={Costs} />
-    <Route path="Car/:id" component={RecipeReviewCard} />
-    <Route path="PaymentForm" component={CheckoutPaymentForm} />
-    <Route path="Review" component={CheckoutReview} />
-    <Route path="ChechoutForm" component={CheckoutAddressForm} />
-    <Route path="Checkout/:id" component={Checkout} />
+    <Route exact path="/" component={Home} />
+    <Route exact path="/Cars" component={CarGridList} />
+    <Route exact path="/Prices" component={Pricing} />
+    <Route exact path="/Users" component={Users} />
+    <Route exact path="/Contact" component={AddressForm} />
+    <Route exact path="/Costs" component={Costs} />
+    <Route path="/Car/:id" component={RecipeReviewCard} />
+    <Route path="/PaymentForm" component={CheckoutPaymentForm} />
+    <Route path="/Review" component={CheckoutReview} />
+    <Route path="/ChechoutForm" component={CheckoutAddressForm} />
+    <Route path="/Checkout/:id" component={Checkout} />
     <StickyFooter />
   </div>
 );

@@ -25,17 +25,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
-  { title: 'Samochody', url: 'Cars/' },
-  { title: 'Koszty', url: 'Costs/' },
+  { title: 'Samochody', url: '/Cars' },
+  { title: 'Koszty', url: '/Costs' },
   { title: 'O firmie', url: 'http://www.nitro-gear.pl/pl/page/o-nas/2/' },
-  { title: 'Kontakt', url: 'Contact/' },
+  { title: 'Kontakt', url: '/Contact' },
 ];
 
 const mainFeaturedPost = {
   title: 'Wypożyczalnia samochodów "Nitro - Gear"',
   description:
     "Wypożyczysz u nas auto dostosowane do własnych potrzeb",
-  image: './Maybah/Maybah.jpg',
+  image: './Maybah/MAybah.jpg',
   imgText: 'Nitro - Gear',
   linkText: 'Kontynuuj…',
 };
@@ -66,12 +66,12 @@ const sidebar = {
   description:
     'Na rynku lokalnym obsługujemy pojazdy osobowe wszystkich marek z silnikami benzynowymi i diesla. Dysponujemy profesjonalnym sprzętem oraz wieloletnim doświadczeniem. Wykonujemy usługi wg. norm technicznych oraz naprawy i modyfikacje niestandardowe. Każdy klient korzystający z naszych usług ma zapewnioną obsługę w doborze części zamiennych jak i oryginalnych. Nasze usługi są objęte 24 miesięczną gwarancją.',
   archives: [
-    { title: 'Ford Focus', url: 'Car/4' },
-    { title: 'Opel Astra', url: 'Car/1' },
-    { title: 'Skoda Octavia', url: 'Car/3' },
-    { title: 'Toyota Yaris', url: 'Car/2' },
-    { title: 'Mercedes S550', url: 'Car/6' },
-    { title: 'Mercedes Maybah', url: 'Car/5' },
+    { title: 'Ford Focus', url: '/Car/4' },
+    { title: 'Opel Astra', url: '/Car/1' },
+    { title: 'Skoda Octavia', url: '/Car/3' },
+    { title: 'Toyota Yaris', url: '/Car/2' },
+    { title: 'Mercedes S550', url: '/Car/6' },
+    { title: 'Mercedes Maybah', url: '/Car/5' },
     ],
   social: [
     { name: 'GitHub', icon: GitHubIcon },
