@@ -51,7 +51,7 @@ export default function Header(props) {
   const logInButton = () => {
     return (
       <React.Fragment>
-        <Button variant="outlined" size="small" href="/SignIn">
+        <Button variant="outlined" size="small" href="#SignIn">
           Zaloguj przez portal
         </Button>
       </React.Fragment>

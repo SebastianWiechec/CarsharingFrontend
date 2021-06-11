@@ -35,7 +35,7 @@ const mainFeaturedPost = {
   title: 'Wypożyczalnia samochodów "Nitro - Gear"',
   description:
     "Wypożyczysz u nas auto dostosowane do własnych potrzeb",
-  image: './Maybah/MAybah.jpg',
+  image: './Maybah/Maybah.jpg',
   imgText: 'Nitro - Gear',
   linkText: 'Kontynuuj…',
 };

@@ -74,8 +74,8 @@ export default function RecipeReviewCard(props) {
   let href = "";
   let user = localStorage.getItem("userId");
 
-  if (!user) href = "/SignIn";
-  else href = `/Checkout/${props.match.params.id}`;
+  if (!user) href = "#SignIn";
+  else href = `#Checkout/${props.match.params.id}`;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -109,7 +109,7 @@ export default function RecipeReviewCard(props) {
             </Avatar>
           }
           action={
-            <IconButton aria-label="settings" href="/">
+            <IconButton aria-label="settings" href="#">
               <MoreVertIcon />
               Strona główna
             </IconButton>
