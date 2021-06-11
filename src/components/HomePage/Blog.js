@@ -25,10 +25,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
-  { title: 'Samochody', url: '/Cars' },
-  { title: 'Koszty', url: '/Costs' },
+  { title: 'Samochody', url: 'Cars/' },
+  { title: 'Koszty', url: 'CarsharingFrontend/Costs' },
   { title: 'O firmie', url: 'http://www.nitro-gear.pl/pl/page/o-nas/2/' },
-  { title: 'Kontakt', url: '/Contact' },
+  { title: 'Kontakt', url: '/CarsharingFrontend/Contact' },
 ];
 
 const mainFeaturedPost = {
