@@ -31,9 +31,9 @@ const hist = createBrowserHistory();
 function App() {
   return (
     <Provider store={store}>
-      <HashRouter history={hist} basename="/CarsharingFrontend">
+      <HashRouter history={hist} basename="/">
         <Switch>
-          <Route exact path="/CarsharingFrontend" component={DefaultContainer} />
+          <Route exact path="/" component={DefaultContainer} />
           <Route exact path="/SignIn" component={LoginContainer} />
           <Route exact path="/Register" component={LoginContainer} />
           <Route exact path="/Cars" component={DefaultContainer} />
@@ -47,7 +47,7 @@ function App() {
           <Route exact path="/ChechoutForm" component={DefaultContainer} />
           <Route exact path="/Checkout/:id" component={DefaultContainer} />
           <Route exact path="/Costs" component={DefaultContainer} />
-          <Redirect to="/CarsharingFrontend" />
+          <Redirect to="/" />
         </Switch>
       </HashRouter>
     </Provider>
